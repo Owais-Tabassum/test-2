@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrical Engineer Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #0078d4;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 2rem auto;
+        }
+
+        .about {
+            margin: 2rem 0;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin: 0.5rem;
+        }
+
+        .dropdown button {
+            background: #0078d4;
+            color: white;
+            border: none;
+            padding: 0.8rem;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            border-radius: 4px;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 0.8rem;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1rem 0;
+            background: #0078d4;
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                font-size: 1.2rem;
+            }
+
+            .dropdown button {
+                font-size: 0.9rem;
+                padding: 0.6rem;
+            }
+
+            .about {
+                padding: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Owais Tabassum - Electrical Engineer</h1>
+        <p>Welcome to my professional portfolio</p>
+    </header>
+
+    <div class="container">
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Hello! I am an Electrical Engineer with experience in analog design, telecommunications, and innovative projects. Explore my work through the dropdown menus below!</p>
+        </section>
+
+        <div class="dropdown">
+            <button>Projects</button>
+            <div class="dropdown-content">
+                <a href="#">Project 1</a>
+                <a href="#">Project 2</a>
+                <a href="#">Project 3</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button>Experience</button>
+            <div class="dropdown-content">
+                <a href="#">Company 1</a>
+                <a href="#">Company 2</a>
+                <a href="#">Company 3</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button>Skills</button>
+            <div class="dropdown-content">
+                <a href="#">Skill 1</a>
+                <a href="#">Skill 2</a>
+                <a href="#">Skill 3</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button>Contact</button>
+            <div class="dropdown-content">
+                <a href="#">Email</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Owais Tabassum. All rights reserved.</p>
+    </footer>
+</body>
+</html>
